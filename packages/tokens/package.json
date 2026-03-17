@@ -1,0 +1,27 @@
+{
+  "name": "@paralleldrive/alloy-tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for Alloy Design System: color, typography, spacing, motion",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": {
+      "import": "./dist/css/index.js",
+      "types": "./dist/css/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
